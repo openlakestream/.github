@@ -19,9 +19,9 @@ A lakehouse holds data to analyze the business; a Streamhouse holds data to run 
 | Project | What it is | Status |
 |---|---|---|
 | [Lakestream specification](https://openlakestream.org/docs/specification) | The API and specification: stream catalog, log, cursors, data format, and how a stream becomes readable as a table | Evolving |
-| [Ursa](https://github.com/lakestream-io/ursa) | The Java storage engine that implements the specification, embeddable in messaging brokers. Includes the stream materialization framework, which turns streams into lakehouse tables and other queryable states | 1.0 |
-| [UFK](https://github.com/lakestream-io/kafka) | Ursa for Apache Kafka: a native Apache Kafka distribution that adds Ursa (Lakestream) as diskless storage. Diskless topics keep their records on object storage; every other topic stays Kafka | 4.3.1.1 |
-| [leaderless-log-protocol](https://github.com/lakestream-io/leaderless-log-protocol) | The leaderless log protocol used in Ursa | Published |
+| [Ursa](https://github.com/openlakestream/ursa) | The Java storage engine that implements the specification, embeddable in messaging brokers. Includes the stream materialization framework, which turns streams into lakehouse tables and other queryable states | 1.0 |
+| [UFK](https://github.com/openlakestream/kafka) | Ursa for Apache Kafka: a native Apache Kafka distribution that adds Ursa (Lakestream) as diskless storage. Diskless topics keep their records on object storage; every other topic stays Kafka | 4.3.1.1 |
+| [leaderless-log-protocol](https://github.com/openlakestream/leaderless-log-protocol) | The leaderless log protocol used in Ursa | Published |
 
 Ursa keeps stream metadata in [Oxia](https://github.com/oxia-db/oxia), open source under the CNCF. Its storage is protocol-neutral: Ursa already runs under both the Kafka and Apache Pulsar® services in StreamNative Cloud. The open build ships with Kafka today; Pulsar is coming.
 
@@ -39,7 +39,7 @@ Building on Lakestream doesn't need our permission. An engine for another protoc
 
 Contributions of every kind are welcome, to the specification as much as to the code:
 
-- **Ask questions and share ideas** in [GitHub Discussions](https://github.com/orgs/lakestream-io/discussions).
+- **Ask questions and share ideas** in [GitHub Discussions](https://github.com/orgs/openlakestream/discussions).
 - **Report bugs** as issues in the relevant repository.
 - **Propose specification changes** in the open, as a discussion, before implementing them.
 - **Send pull requests.** Sign off your commits with `git commit -s` (Developer Certificate of Origin). There's no CLA.
