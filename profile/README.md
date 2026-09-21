@@ -20,7 +20,7 @@ A lakehouse holds data to analyze the business; a Streamhouse holds data to run 
 |---|---|---|
 | [Lakestream specification](https://openlakestream.org/docs/specification) | The API and specification: stream catalog, log, cursors, data format, and how a stream becomes readable as a table | Evolving |
 | [Ursa](https://github.com/lakestream-io/ursa) | The Java storage engine that implements the specification, embeddable in messaging brokers. Includes the stream materialization framework, which turns streams into lakehouse tables and other queryable states | 1.0 |
-| [UFK](https://github.com/lakestream-io/kafka) | Ursa for Apache Kafka: a fork of Apache Kafka that adds Ursa as diskless storage. Diskless topics keep their records on object storage; every other topic stays Kafka | Developer preview |
+| [UFK](https://github.com/lakestream-io/kafka) | Ursa for Apache Kafka: a native Apache Kafka distribution that adds Ursa (Lakestream) as diskless storage. Diskless topics keep their records on object storage; every other topic stays Kafka | 4.3.1.1 |
 | [leaderless-log-protocol](https://github.com/lakestream-io/leaderless-log-protocol) | The leaderless log protocol used in Ursa | Published |
 
 Ursa keeps stream metadata in [Oxia](https://github.com/oxia-db/oxia), open source under the CNCF. Its storage is protocol-neutral: Ursa already runs under both the Kafka and Apache Pulsar® services in StreamNative Cloud. The open build ships with Kafka today; Pulsar is coming.
