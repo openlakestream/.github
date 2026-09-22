@@ -44,6 +44,8 @@ Contributions of every kind are welcome, to the specification as much as to the 
 - **Propose specification changes** in the open, as a discussion, before implementing them.
 - **Send pull requests.** Sign off your commits with `git commit -s` (Developer Certificate of Origin). There's no CLA.
 
+See [openlakestream.org/community](https://openlakestream.org/community) for where to talk, how to contribute, and how [Lakestream Improvement Proposals (LIPs)](https://github.com/openlakestream/lips) work.
+
 Lakestream, Ursa and UFK are licensed under the Apache License 2.0.
 
 ---
